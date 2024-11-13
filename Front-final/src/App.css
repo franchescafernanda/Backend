@@ -1,0 +1,584 @@
+/*Navbar*/
+.Navbar {
+    background-color: rgb(205, 19, 118);
+    width: 100%;
+    margin: auto;
+    padding-left:  30px ;
+    padding-right: 30px;
+  }
+  
+.containerNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto;
+    margin: auto;
+  }
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+.navlinkNavbar {
+    text-decoration: none;
+    text-decoration-line: none;
+    color: white;
+    background-attachment: fixed;
+  }
+
+/*Home*/
+.home {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.homeImg {
+  background-image: url("../src/assets/img/BAnner3.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 20rem; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.novedades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.photo1 {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 10px; 
+  border-radius: 10px;
+  transition: transform 0.3s; 
+}
+
+.photo1:hover {
+  transform: scale(1.05);
+}
+
+.store-intro {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.store-intro h2, .store-intro h3 {
+  color: #2c3e50;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.subcategory {
+  padding: 20px;
+  text-align: center; 
+}
+
+.subcategory img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.buttonProducts {
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttonProducts:hover {
+  background-color: #2980b9;
+}
+
+
+/*Productos*/
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px; 
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden; 
+  padding: 10px; 
+  text-align: center; 
+  background-color: #fff; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.product-image {
+  width: 80%; 
+  height: 200px;
+  object-fit: cover; 
+  display: block;
+  margin: 0 auto; 
+}
+
+.product-buttons {
+  margin-top: 10px; 
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-details {
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-details:hover {
+  background-color: #0056b3;
+}
+
+.btn-add-to-cart {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #218838;
+}
+
+.photo1{
+  padding: 50px;
+}
+
+.btn{
+  margin: 10px;
+}
+
+.cards{
+    padding: 3rem; 
+}
+
+.photo {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.favorite-button {
+  position: absolute; /* Posiciona en la parte superior derecha */
+  top: 10px;
+  right: 10px;
+  z-index: 10; /* Asegura que esté por encima de otros elementos */
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/*btn +-*/
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.quantity-controls button {
+  background-color: #f258aa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.quantity-controls button:hover {
+  background-color: #009ACD;
+}
+
+.quantity-controls span {
+  font-size: 16px;
+  min-width: 30px;
+  text-align: center;
+}
+
+/*btn ver +*/
+.button-container {
+  display: flex; /* Utiliza flexbox para alinear los botones */
+  justify-content: center; /* Centra horizontalmente los botones */
+  gap: 10px; /* Espaciado entre los botones */
+}
+
+.buttonDetails, 
+.button-container button {
+  font-size: 14px; /* Tamaño de la fuente más pequeño */
+  padding: 5px 10px; /* Espaciado interno más pequeño */
+  border-radius: 4px; /* Bordes redondeados */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.buttonDetails {
+  background-color: #f258aa; /* Color de fondo para el botón "Ver más" */
+  color: white; /* Color del texto */
+  border: 1px solid #ccc; /* Borde gris claro */
+}
+
+.button-container button {
+  background-color: #f258aa; /* Color rosa para el botón "Agregar al carrito" */
+  color: white; /* Color del texto en blanco */
+  border: none; /* Sin borde */
+}
+
+
+
+/*Registro*/
+.register-form {
+  max-width: 400px;
+  height: 420px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.register-form h2 {
+  text-align: center;
+  color: #333;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.register-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-form button:hover {
+  background-color: #0056b3;
+}
+
+.register-form p {
+  text-align: center;
+  color: red;
+}
+
+
+/*login*/
+.login { /*lograr que ocupe la pagina hacia abajo*/
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  
+}
+.cont-login{
+  min-height: 65vh;
+}
+
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login form h2 {
+  text-align: center;
+  color: #333;
+}
+
+.login input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.login input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login button:hover {
+  background-color: #0056b3;
+}
+
+.alert {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert-info {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+/*profile*/
+
+.profile-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.profile-container h1 {
+  text-align: center;
+  color: #333;
+}
+
+.profile-container p {
+  font-size: 18px;
+  color: #555;
+}
+
+.profile-container h2 {
+  margin-top: 30px;
+  color: #007bff;
+}
+
+.profile-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile-container li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-container li:last-child {
+  border-bottom: none;
+}
+
+.profile-picture {
+  text-align: center;
+}
+
+.profile-container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #e64180;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.profile-container button:hover {
+  background-color: #e64180;
+}
+
+
+.ContainerPublish{
+  margin: 70px;
+}
+
+.title1{
+text-align: center;
+margin: 40px;
+}
+
+.imgDetails {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  padding: 20px;
+  gap: 20px; 
+}
+
+.imgDetails img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.description {
+  text-align: center;
+}
+
+.description h2 {
+  margin-bottom: 10px;
+}
+
+.description p {
+  margin-bottom: 5px;
+}
+
+.description {
+  text-align: center;
+}
+
+.description h2 {
+  margin-bottom: 10px;
+}
+
+.description p {
+  margin-bottom: 5px;
+}
+
+
+/*carrito*/
+.cart-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* Cubre el área de la tarjeta sin distorsionar la imagen */
+}
+
+.cart-card img {
+  width: 100%; /* la imagen ocupe todo el ancho de la tarjeta */
+  height: 250px;
+  object-fit: cover;
+}
+
+.add-product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px; /*modificar*/
+  height: 530px;
+  margin: 0 auto;
+  padding: 2 rem;
+}
+
+.add-product-container h1 {
+  margin-bottom: 20px;
+}
+
+.add-product-container .form-control {
+  width: 100%;
+  max-width: 400px;
+}
+
+/*pago*/
+.checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente (si es necesario) */
+  text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.checkout h2 {
+  margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.checkout button {
+  margin-top: 20px; /* Espacio encima del botón */
+}
+
+
+/*Footer*/
+.footer{
+  background-color: rgba(255, 0, 0, 0.167);
+  color: white;
+  text-align: center;
+  }
+  
+  .footer .contactos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+.footer2{
+background-color: rgb(205, 19, 118);
+color: white;
+}
